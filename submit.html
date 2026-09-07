@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Submit an Article | The Muslim Thinker</title>
+<meta name="description" content="The Muslim Thinker — Islamic thought, Qur'an and Hadith, history, society, contemporary issues, research and book reviews.">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">TM</span>
+      <span class="brand-name">The Muslim Thinker</span>
+    </a>
+    <button class="hamburger" aria-label="Open menu">☰</button>
+    <nav class="menu"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="articles.html">Articles</a><a href="categories.html">Categories</a><a href="authors.html">Authors</a><a href="contact.html">Contact</a></nav>
+  </div>
+</header>
+
+
+<main>
+<section class="page-hero"><div class="container"><div class="breadcrumb">Home / Submit an Article</div><h1>Write for The Muslim Thinker</h1><p class="lead">Send your original article for editorial review.</p></div></section>
+<section class="section"><div class="container form-wrap">
+<div class="notice"><strong>Before submitting:</strong> Please send original work, use accurate references, avoid plagiarism, and do not include passwords, private documents or other sensitive information. Submission does not guarantee publication.</div>
+
+<h2>Submission Rules</h2>
+<ul>
+<li>Write on one of our listed categories.</li>
+<li>Use your own words. Quote and cite sources properly.</li>
+<li>For Qur'an and Hadith quotations, provide enough source detail for checking.</li>
+<li>Do not submit abusive, threatening, deliberately misleading or sectarian attack content.</li>
+<li>Use a clear title and readable structure with headings where useful.</li>
+<li>We may edit grammar, formatting, headings and length while preserving the core argument.</li>
+</ul>
+
+<form id="submissionForm" action="https://chatgpt.com/c/6a9ea33c-6310-83ee-9721-631e13962a1c" method="POST" target="submit-result">
+  <div class="form-group"><label for="name">Author name *</label><input id="name" name="name" required maxlength="100"></div>
+  <div class="form-group"><label for="email">Email *</label><input id="email" type="email" name="email" required maxlength="150"><div class="help">Used only for editorial communication.</div></div>
+  <div class="form-group"><label for="bio">Short author bio *</label><textarea id="bio" name="bio" required maxlength="1200" style="min-height:130px" placeholder="Example: Sociology student and independent writer interested in Islamic thought and society."></textarea></div>
+  <div class="form-group"><label for="title">Article title *</label><input id="title" name="title" required maxlength="180"></div>
+  <div class="form-group"><label for="category">Category *</label>
+    <select id="category" name="category" required>
+      <option value="">Select a category</option>
+      <option>Islamic Thought</option><option>Qur'an & Hadith</option><option>Islamic History</option>
+      <option>Islam & Society</option><option>Contemporary Issues</option><option>Research & Articles</option>
+      <option>Muslim Civilization</option><option>Book Reviews</option>
+    </select>
+  </div>
+  <div class="form-group"><label for="article">Article text *</label><textarea id="article" name="article" required minlength="500" placeholder="Write your complete article here..."></textarea><div class="help">Recommended: 800–2,500 words for a normal article.</div></div>
+  <div class="form-group"><label for="sources">References / sources *</label><textarea id="sources" name="sources" required style="min-height:170px" placeholder="Book/article title, author, publisher/year, URLs where appropriate, Qur'an references, Hadith collection and number, etc."></textarea></div>
+
+  <!-- Honeypot field: real visitors should leave this blank -->
+  <div style="display:none"><label>Website<input name="website" tabindex="-1" autocomplete="off"></label></div>
+
+  <div class="checkbox"><input id="consent" type="checkbox" name="consent" value="yes" required><label for="consent">I confirm that this is my original submission, that my sources are provided honestly, and that I have read the Terms / Disclaimer.</label></div>
+  <button class="btn btn-dark" type="submit">Submit Article</button>
+  <p id="submitMessage" class="help"></p>
+</form>
+<iframe name="submit-result" style="width:100%;height:60px;border:0;margin-top:8px" title="Submission result"></iframe>
+
+<p class="help">Important setup: replace <code>YOUR_APPS_SCRIPT_WEB_APP_URL</code> in this page with the Google Apps Script Web App URL described in README.md.</p>
+</div></section>
+</main>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="smallcaps">The Muslim Thinker</div>
+        <h3>Islamic thought, society, history and research.</h3>
+        <p>Independent educational publication. Articles are published after editorial review.</p>
+      </div>
+      <div>
+        <div class="smallcaps">Explore</div>
+        <p><a href="articles.html">Articles</a><br><a href="categories.html">Categories</a><br><a href="authors.html">Authors</a><br><a href="submit.html">Write for Us</a></p>
+      </div>
+      <div>
+        <div class="smallcaps">Policies</div>
+        <p><a href="privacy.html">Privacy Policy</a><br><a href="terms.html">Terms / Disclaimer</a><br><a href="contact.html">Contact</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span data-year></span> The Muslim Thinker. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
